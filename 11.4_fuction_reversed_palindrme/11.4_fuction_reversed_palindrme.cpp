@@ -1,6 +1,7 @@
 ﻿#include <iostream>
 #include <string>
 
+/* Polindrome */
 std::string reversed(std::string str) {
     int len = str.length();
     int n = len - 1;
@@ -11,15 +12,25 @@ std::string reversed(std::string str) {
     return str;
 }
 
+void polindrom() {
+    std::cout << "Polindrom" << '\n';
+}
+
+void isNotPolinrom() {
+    std::cout << "It isn't a polindrom" << '\n';
+}
+
 int main()
 {
     std::string word;
     std::cin >> word;
 
     if (word == reversed(word)) {
+        polindrom();
         std::cout << "Polindrom" << '\n';
     }
     else {
+        isNotPolinrom();
         std::cout << "It isn't a polindrom";
     }
 
